@@ -161,11 +161,9 @@ if ($player == null) {
 
     case 'verify_result':
     if (isset($_POST['report'])) {
-
         $drop = (isset($_POST['drop'])) ? 'Y' : 'N';
         print_verify_resultForm($_POST['report'], $_POST['match_id'], $_POST['player'], $drop, 0, 0);
-    }
-    else {
+    } else {
         print_submit_resultForm($_REQUEST['match_id']);
     }
     break;
