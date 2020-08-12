@@ -1,7 +1,7 @@
 <?php
 
 require_once 'bootstrap.php';
-if (isset($CONFIG['cookie_lifetime'])){
+if (isset($CONFIG['cookie_lifetime'])) {
     ini_set('session.gc_maxlifetime', $CONFIG['cookie_lifetime']);
     ini_set('session.cookie_lifetime', $CONFIG['cookie_lifetime']);
     session_set_cookie_params($CONFIG['cookie_lifetime']);
