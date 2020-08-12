@@ -27,6 +27,9 @@ $CONFIG['calendar_description'] = "a description for the events calendar";
 # Google Analytics account ID.
 $CONFIG['analytics_account'] = 'UA-37926034-1';
 
+# How long to store session cookies in seconds
+$CONFIG['cookie_lifetime'] = 5184000;
+
 # === Infobot PARAMETERS ==
 # If you have set it up with infobot or PDBot to contact the site, you can change the passkey here.
 # If you haven't set it up, leave this blank.
